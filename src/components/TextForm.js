@@ -53,7 +53,7 @@ export default function TextForm(props) {
                     {text}
                 </p>
                 <p>Email: <b>{text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)}</b></p>
-                <p limit="8">Student Id: {text.match(/(0-9)/)}, &nbsp;</p>
+                {/* <p limit="8">Student Id: {text.match(/(0-9)/)}, &nbsp;</p> */}
             </div>
         </>
     )
