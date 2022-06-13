@@ -3,7 +3,7 @@
 import './App.css';
 import About from './components/About';
 import Navbar from './components/Navbar';
-// import TextForm from './components/TextForm';
+import TextForm from './components/TextForm';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
 
 
       <div className="container my-3">
-        {/* <TextForm exampleLable="Enter the text to Check" /> */}
+        <TextForm exampleLable="Enter the text to Check" />
 
-        <About />
+        {/* <About /> */}
       </div>
 
     </>

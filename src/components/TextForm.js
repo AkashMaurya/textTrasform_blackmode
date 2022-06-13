@@ -22,6 +22,12 @@ export default function TextForm(props) {
 
     }
 
+    // code with Harry Credits : coding wala
+    const handleExtraSpace = () => {
+        let newText = text.split(/[ ]+/);
+        setText(newText.join(" "));
+    }
+
     const onChangehandler = (event) => {
 
         setText(event.target.value);
@@ -34,13 +40,10 @@ export default function TextForm(props) {
             <div className="mb-3 my-3">
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">{props.exampleLable}</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="8" value={text} placeholder="Type your text" onChange={onChangehandler}></textarea>
-
-
                 <button className="btn btn-primary my-3" onClick={handleUpClick}>Conver To UpperCase</button>
-
                 <button className="btn btn-warning mx-3" onClick={handleLoClick}>Conver To LowerCase</button>
-
                 <button className="btn btn-warning mx-3" onClick={handleClrText}>Clear Text</button>
+                <button className="btn btn-warning mx-3" onClick={handleExtraSpace}>Remove Extra Spaces</button>
             </div>
             <div className="container">
                 <h1>Your TextSummery</h1>
